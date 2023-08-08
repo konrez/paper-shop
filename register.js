@@ -148,5 +148,3 @@ const handleFailure = function(msg) {
         failed.classList.remove("show");
     }, 1500)
 };
-
-handleFailure("NOtif")
