@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/confirm.css">
+    <link rel="icon" type="image/png" href="./images/png/favicon.ico" sizes="32x32">
+    <script src="confirm.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="confrim">
+                <p class="title">
+                    Sprawdź swoją skrzynkę mailową
+                </p>
+                <p class="subtitle">
+                    Twoja sesja wygasła, lub Twoje konto zostało juz zatwierdzone.
+                    Spróbuj się zalogować, lub zarejestruj ponownie.
+                    W razie dalszych problemów skontaktuj się z nami.
+                </p>
+                <a href="login.html">
+                    <button class="submit">Przechodzę na stronę logowania</button>
+                </a>
+                <div class="lineFirst"></div>
+                <div class="login">
+                    Wiadomość nie dotarła? <a href="#" class="link">Wyślij jeszcze raz.</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="bgImage"></div>
+            <div class="text">
+                <img src="./images/png/paper.png" alt="background image">
+        </div>
+    </main>
+    <div id="popup" class="popup">
+        <span class="loader"></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css"/>
+    <link rel="stylesheet" href="./styles/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/png/favicon.ico" sizes="32x32">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="register">
+                <div class="notification success" id="success">Rejestracja zakończona sukcesem</div>
+                <div class="notification failed" id="failed"></div>
+                <p>Zarejestruj się</p>
+                <button class="tooltip">
+                    <img src="./images/png/fb.png" alt="facebookReg" class="fbIcon"> Rejestracja przez Facebook
+                </button>
+                <button class="tooltip">
+                    <img src="./images/png/insta.png" alt="instagramReg" class="instaIcon"> Rejestracja przez Instagram
+                </button>
+                <div class="lineFirst">
+                    <p>Lub za pomocą maila</p>
+                </div>
+            </div>
+            <form action="" id="form" class="form">
+                <div class="nameFormWrapper">
+                    <div class="nameForm">
+                        <div class="textInput">
+                            <label for="" class="label">First name</label>
+                            <input type="text" id="firstName" placeholder="First Name">
+                            <div id="firstNameError" class="validationError">
+                                Imię musi mieć 2 - 20 liter, a pierwsza musi być wielka
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nameForm">
+                        <div class="textInput">
+                            <label for="" class="label">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Last Name">
+                            <div id="lastNameError" class="validationError">
+                                Nazwisko musi mieć 2 - 30 liter, a pierwsza musi być wielka
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="nameForm">
+                        <div class="textInput">
+                            <label for="" class="label">Email Address</label>
+                            <input type="text" id="email" placeholder="Email address">
+                            <div id="emailAdressError" class="validationError">
+                                To nie jest poprawny format adresu email
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nameForm">
+                        <div class="textInput">
+                            <label for="" class="label">Password</label>
+                            <input type="password" id="password" placeholder="Password">
+                            <div id="passwordError" class="validationError">
+                                Hasło musi mieć conajmniej 8 znaków, małą i wielką literę, cyfrę i znak specjalny
+                            </div>
+                        </div>
+                    </div>
+                <div class="termsWrapper">
+                    <input type="checkbox" id="checkbox">
+                    <span>Have you read the</span>
+                    <a href="">Terms & Conditions</a>
+                    <div id="termsError" class="validationError">
+                        Brak akceptacji regulaminu
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit">Zarejestruj się za darmo</button>
+                </div>
+            </form>
+            <div class="bottomLine"></div>
+            <div class="login">
+                <span>Masz juz konto?</span>
+                <a href="login.html">Zaloguj się</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="bg">
+                <img src="./images/png/background1.png" alt="backgroundRight"/>
+            </div>
+            <div class="text">
+                <img src="./images/png/paper.png" alt="backgroundLatters">
+            </div>
+        </div>
+    </main>
+    <div id="popup" class="popup">
+        <span class="loader"></span>
+    </div>
+</body>
+</html>

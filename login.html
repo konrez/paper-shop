@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="icon" type="image/png" href="./images/png/favicon.ico" sizes="32x32">
+    <script src="./login.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="login">
+                <div class="notification success" id="success">Logowanie zakończone sukcesem</div>
+                <div class="notification failed" id="failed">Taki user nie istnieje <a href="./index.html">Zarejestruj się</a></div>
+                <p>Zaloguj się</p>
+                <button class="tooltip">
+                    <img src="./images/png/fb.png" alt="logowanie przez facebook"> Logowanie przez Facebook
+                </button>
+                <button class="tooltip">
+                    <img src="./images/png/insta.png" alt="logowanie przez instagram"> Logowanie przez Instagram
+                </button>
+                <div class="lineFirst">
+                    <p>Lub za pomocą maila</p>
+                </div>
+                <form action="" id="form">
+                    <div class="textInput">
+                        <label for="" class="label">e-mail</label>
+                        <input type="text" id="email" placeholder="Email Address">
+                        <div class="validationError" id="emailError">
+                            To nie jest poprawny format adresu email
+                        </div>
+                    </div>
+                    <div class="textInput">
+                        <label for="" class="label">password</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <div class="validationError" id="passwordError">
+                            To nie jest poprawny format hasła
+                        </div>
+                    </div>
+                    <div class="bottomWrapper">
+                        <div class="checkboxInput">
+                            <input type="checkbox" name="rememberCheckbox" id="rememberCheckbox">
+                            <label for="rememberCheckbox">Zapamiętaj mnie</label>
+                            <a href="password-recovery.html">Przypomnij hasło</a>
+                        </div>
+                        <button id="submit" type="submit">Zaloguj się</button>
+                    </div>
+                </form>
+                <div class="lineWrapper"></div>
+                <div class="register">Nie masz jeszcze konta?
+                    <a href="index.html">Zarejestruj się</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="bgImage"></div>
+            <div class="text">
+                <img src="./images/png/paper.png" alt="background image">
+            </div>
+        </div>
+    </main>
+    <div id="popup" class="popup">
+        <span class="loader"></span>
+    </div>
+</body>
+</html>
