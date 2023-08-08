@@ -176,7 +176,7 @@ button > img {
 .tooltip::before {
     content: "";
     position: absolute;
-    top: 5px;
+    top: -10px;
     left: 0;
     transition: 0.3s;
     opacity: 0;
